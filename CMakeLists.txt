@@ -13,11 +13,11 @@ set(SFML_DEP ${PROJECT_SOURCE_DIR}/depends/SFML)
 
 set(SFML_INCLUDE_DIR ${SFML_DEP}/include)
 set(SFML_LIB_DIR ${SFML_DEP}/lib)
-set(SFML_DIR ${SFML_DEP}/lib/cmake/SFML)
+set(SFML_DIR "${SFML_DEP}/lib/cmake/SFML")
 
 set(SFML_STATIC_LIBRARIES TRUE)
 
-find_package(SFML COMPONENTS system window graphics network audio REQUIRED)
+find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
 find_package(OpenGL REQUIRED)
 
 if (SFML_FOUND)
