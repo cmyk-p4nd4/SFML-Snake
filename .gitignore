@@ -1,0 +1,9 @@
+build/
+.vscode/
+
+depends/SFML/bin/
+
+# Build files
+.dll
+.a
+.so
